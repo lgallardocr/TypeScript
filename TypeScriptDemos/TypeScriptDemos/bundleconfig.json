@@ -4,5 +4,11 @@
     "inputFiles": [
       "Scripts/ApplyingTypes.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/Objects.min.js",
+    "inputFiles": [
+      "Scripts/Objects.js"
+    ]
   }
 ]

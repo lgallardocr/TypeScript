@@ -112,6 +112,14 @@
     <Content Include="Scripts\ApplyingTypes.min.js">
       <DependentUpon>ApplyingTypes.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\Objects.js">
+      <DependentUpon>Objects.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Objects.min.js">
+      <DependentUpon>Objects.js</DependentUpon>
+    </Content>
+    <Content Include="Views\ApplyingTypes.html" />
+    <Content Include="Views\Objects.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\ApplyingTypes.ts" />
+    <TypeScriptCompile Include="Scripts\Objects.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
