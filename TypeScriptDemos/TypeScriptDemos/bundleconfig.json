@@ -10,5 +10,11 @@
     "inputFiles": [
       "Scripts/Objects.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/ArrowFunctions.min.js",
+    "inputFiles": [
+      "Scripts/ArrowFunctions.js"
+    ]
   }
 ]
