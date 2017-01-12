@@ -33,4 +33,3 @@ var ApplyingTypes;
     var quantity;
     var company = undefined;
 })(ApplyingTypes || (ApplyingTypes = {}));
-//# sourceMappingURL=ApplyingTypes.js.map
