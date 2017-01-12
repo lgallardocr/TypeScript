@@ -22,5 +22,11 @@
     "inputFiles": [
       "Scripts/FunctionsAndInterfaces.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/DefiningClasses.min.js",
+    "inputFiles": [
+      "Scripts/DefiningClasses.js"
+    ]
   }
 ]

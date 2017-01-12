@@ -22,3 +22,4 @@ var ArrowFunctions;
     console.log(squareIt(rectA));
     console.log(squareIt(rectB));
 })(ArrowFunctions || (ArrowFunctions = {}));
+//# sourceMappingURL=ArrowFunctions.js.map

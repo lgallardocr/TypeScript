@@ -33,3 +33,4 @@ var Objects;
     var sq2 = squareIt({ h: 10, w: 20 });
     console.log("SquareIt = " + sq2);
 })(Objects || (Objects = {}));
+//# sourceMappingURL=Objects.js.map
