@@ -28,5 +28,11 @@
     "inputFiles": [
       "Scripts/DefiningClasses.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/ExtendingTypes.min.js",
+    "inputFiles": [
+      "Scripts/ExtendingTypes.js"
+    ]
   }
 ]

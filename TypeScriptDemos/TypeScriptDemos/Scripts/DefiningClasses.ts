@@ -1,4 +1,4 @@
-﻿class Engine {
+﻿class Engine1 {
 
     constructor(public horsePower: number, public engineType: string) { }
 
@@ -6,18 +6,18 @@
 
 class Car {
 
-    private _engine: Engine;
+    private _engine: Engine1;
 
-    constructor(engine: Engine) {
+    constructor(engine: Engine1) {
         this.engine = engine;
     }
 
     //  Get/Set methods
-    get engine(): Engine {
+    get engine(): Engine1 {
         return this._engine;
     }
 
-    set engine(value: Engine) {
+    set engine(value: Engine1) {
         if (value === undefined) throw 'Please supply an engine';
         this._engine = value;
     }
@@ -29,7 +29,7 @@ class Car {
 }
 
 window.onload = function () {
-    var engine = new Engine(350, "V8");
+    var engine = new Engine1(350, "V8");
     var car = new Car(engine);
     car.start();
 }

@@ -1,9 +1,9 @@
-var Engine = (function () {
-    function Engine(horsePower, engineType) {
+var Engine1 = (function () {
+    function Engine1(horsePower, engineType) {
         this.horsePower = horsePower;
         this.engineType = engineType;
     }
-    return Engine;
+    return Engine1;
 }());
 var Car = (function () {
     function Car(engine) {
@@ -28,7 +28,7 @@ var Car = (function () {
     return Car;
 }());
 window.onload = function () {
-    var engine = new Engine(350, "V8");
+    var engine = new Engine1(350, "V8");
     var car = new Car(engine);
     car.start();
 };
