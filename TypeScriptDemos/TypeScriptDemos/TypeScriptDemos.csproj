@@ -116,6 +116,9 @@
     <Content Include="Scripts\DefiningClasses.min.js">
       <DependentUpon>DefiningClasses.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\ExtendingInterfaces.js">
+      <DependentUpon>ExtendingInterfaces.ts</DependentUpon>
+    </Content>
     <Content Include="Scripts\ExtendingTypes.js">
       <DependentUpon>ExtendingTypes.ts</DependentUpon>
     </Content>
@@ -134,8 +137,17 @@
     <Content Include="Scripts\FunctionsAndInterfaces.min.js">
       <DependentUpon>FunctionsAndInterfaces.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\Interfaces.js">
+      <DependentUpon>Interfaces.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Interfaces.min.js">
+      <DependentUpon>Interfaces.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\Objects.js.map">
       <DependentUpon>Objects.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Interfaces.js.map">
+      <DependentUpon>Interfaces.ts</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -165,6 +177,7 @@
     <Content Include="Views\DefiningClasses.html" />
     <Content Include="Views\ExtendingTypes.html" />
     <Content Include="Views\FunctionsAndInterfaces.html" />
+    <Content Include="Views\Interfaces.html" />
     <Content Include="Views\Objects.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -175,8 +188,10 @@
     <TypeScriptCompile Include="Scripts\ApplyingTypes.ts" />
     <TypeScriptCompile Include="Scripts\ArrowFunctions.ts" />
     <TypeScriptCompile Include="Scripts\DefiningClasses.ts" />
+    <TypeScriptCompile Include="Scripts\ExtendingInterfaces.ts" />
     <TypeScriptCompile Include="Scripts\ExtendingTypes.ts" />
     <TypeScriptCompile Include="Scripts\FunctionsAndInterfaces.ts" />
+    <TypeScriptCompile Include="Scripts\Interfaces.ts" />
     <TypeScriptCompile Include="Scripts\Objects.ts" />
   </ItemGroup>
   <ItemGroup>

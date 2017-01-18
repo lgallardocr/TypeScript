@@ -1,5 +1,11 @@
-﻿/*
-class Engine {
+/*
+interface IEngine {
+    start(callback: (startStatus: boolean, engineType: string) => void): void;
+    stop(callback: (stopStatus: boolean, engineType: string) => void): void;
+
+}
+
+class Engine implements IEngine {
 
     constructor(public horsePower: number, public engineType: string) { }
 
@@ -17,6 +23,22 @@ class Engine {
 
 }
 
+class CustomEngine implements IEngine {
+
+    start(callback: (startStatus: boolean, engineType: string) => void) {
+        window.setTimeout(() => {
+            callback(true, "Custom Engine");
+        }, 1000);
+    }
+
+    stop(callback: (stopStatus: boolean, engineType: string) => void) {
+        window.setTimeout(() => {
+            callback(true, "Custom Engine");
+        }, 1000);
+    }
+
+}
+
 class Accessory {
     constructor(public accessoryNumber: number, public title: string) { }
 }
@@ -24,12 +46,12 @@ class Accessory {
 class Auto {
 
     private _basePrice: number;
-    private _engine: Engine;
+    private _engine: IEngine;
     make: string;
     model: string;
     accessoryList: string;
 
-    constructor(basePrice: number, engine: Engine, make: string, model: string) {
+    constructor(basePrice: number, engine: IEngine, make: string, model: string) {
         this.basePrice = basePrice;
         this.engine = engine;
         this.make = make;
@@ -62,43 +84,21 @@ class Auto {
         this._basePrice = value;
     }
 
-    get engine(): Engine {
+    get engine(): IEngine {
         return this._engine;
     }
 
-    set engine(value: Engine) {
+    set engine(value: IEngine) {
         if (value == undefined) throw "Please supply an engine."
         this._engine = value;
     }
 }
 
-class Trunk extends Auto {
-
-    bedLength: string;
-    fourByFour: boolean;
-
-    constructor(basePrice: number, engine: Engine, make: string, model: string,
-        bedLength: string, fourByFour: boolean) {
-
-        super(basePrice, engine, make, model);
-        this.bedLength = bedLength;
-        this.fourByFour = fourByFour;
-    }
-
-}
-
 
 window.onload = function () {
-    var trunk = new Trunk(40000, new Engine(300, "V8"), "Chevy", "Silverado",
-        "Long Bed", true);
+    var auto = new Auto(25000, new Engine(125, "V4-L"), "MVC", "2015");
+    var engine = <Engine>auto.engine;
+    alert(engine.engineType);
 
-    trunk.addAccessories(new Accessory(25, "Radio"), new Accessory(568, "Sunroof"));
-
-    trunk.engine.start((status: boolean, engineType: string) => {
-        alert(engineType + " was started.")
-    });
-
-    alert(trunk.getAccessoryList());
 }
-
-*/
+*/ 

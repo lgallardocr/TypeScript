@@ -34,5 +34,11 @@
     "inputFiles": [
       "Scripts/ExtendingTypes.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/Interfaces.min.js",
+    "inputFiles": [
+      "Scripts/Interfaces.js"
+    ]
   }
 ]

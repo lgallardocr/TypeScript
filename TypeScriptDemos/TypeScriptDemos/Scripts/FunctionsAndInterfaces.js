@@ -60,4 +60,3 @@ var FunctionsAndInterfaces;
     s.addRating(5);
     console.log(s.calcRating());
 })(FunctionsAndInterfaces || (FunctionsAndInterfaces = {}));
-//# sourceMappingURL=FunctionsAndInterfaces.js.map

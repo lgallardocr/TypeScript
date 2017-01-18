@@ -32,4 +32,3 @@ window.onload = function () {
     var car = new Car(engine);
     car.start();
 };
-//# sourceMappingURL=DefiningClasses.js.map
