@@ -1,3 +1,8 @@
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
 var Engine = (function () {
     function Engine(horsePower, engineType) {
         this.horsePower = horsePower;
@@ -40,11 +45,13 @@ var Accessory = (function () {
     return Accessory;
 }());
 var Auto = (function () {
-    function Auto(basePrice, engine, make, model) {
-        this.basePrice = basePrice;
-        this.engine = engine;
-        this.make = make;
-        this.model = model;
+    function Auto(options) {
+        this.basePrice = options.basePrice;
+        this.engine = options.engine;
+        this.make = options.make;
+        this.model = options.model;
+        this.state = options.state;
+        this.year = options.year;
     }
     Auto.prototype.calculateTotal = function () {
         var taxRate = 0.08;
@@ -90,8 +97,24 @@ var Auto = (function () {
     });
     return Auto;
 }());
+var Trunk = (function (_super) {
+    __extends(Trunk, _super);
+    function Trunk(options) {
+        _super.call(this, options);
+        this.bedLength = options.bedLength;
+        this.fourByFour = options.fourByFour;
+    }
+    return Trunk;
+}(Auto));
 window.onload = function () {
-    var auto = new Auto(25000, new Engine(125, "V4-L"), "MVC", "2015");
-    var engine = auto.engine;
-    alert(engine.engineType);
+    var truck = new Trunk({
+        engine: new Engine(125, 'V8T'),
+        basePrice: 45000,
+        state: "Arizona",
+        make: "Ford",
+        model: "F-150",
+        year: 2013,
+        bedLength: "Short Bed",
+        fourByFour: true
+    });
 };

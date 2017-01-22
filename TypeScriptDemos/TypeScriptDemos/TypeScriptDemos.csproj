@@ -96,6 +96,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\toastr.css" />
+    <Content Include="content\toastr.min.css" />
     <Content Include="packages.config" />
     <None Include="bundleconfig.json" />
     <Content Include="Scripts\ApplyingTypes.js.map">
@@ -143,6 +145,11 @@
     <Content Include="Scripts\Interfaces.min.js">
       <DependentUpon>Interfaces.js</DependentUpon>
     </Content>
+    <Content Include="content\toastr.scss" />
+    <Content Include="content\toastr.less" />
+    <None Include="Scripts\jquery-1.6.3-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.3.js" />
+    <Content Include="Scripts\jquery-1.6.3.min.js" />
     <Content Include="Scripts\Objects.js.map">
       <DependentUpon>Objects.ts</DependentUpon>
     </Content>
@@ -172,6 +179,8 @@
     <Content Include="Scripts\Objects.min.js">
       <DependentUpon>Objects.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Views\ApplyingTypes.html" />
     <Content Include="Views\ArrowFunctions.html" />
     <Content Include="Views\DefiningClasses.html" />
