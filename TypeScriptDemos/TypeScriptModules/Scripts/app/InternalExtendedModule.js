@@ -12,16 +12,16 @@ var App;
         (function (Utils) {
             var Logger = (function () {
                 function Logger(mode) {
-                    if (mode === void 0) { mode = LoggerMode.Console; }
+                    if (mode === void 0) { mode = App.LoggerMode.Console; }
                     this.mode = mode;
                     switch (this.mode) {
-                        case LoggerMode.Console:
+                        case App.LoggerMode.Console:
                             this.writer = function (msg) { return console.log(msg); };
                             break;
-                        case LoggerMode.Alert:
+                        case App.LoggerMode.Alert:
                             this.writer = function (msg) { return alert(msg); };
                             break;
-                        case LoggerMode.Toastr:
+                        case App.LoggerMode.Toastr:
                             this.writer = function (msg) { return toastr.info(msg); };
                             break;
                     }
@@ -73,8 +73,9 @@ var App;
         })(Shapes = Tools.Shapes || (Tools.Shapes = {}));
     })(Tools = App.Tools || (App.Tools = {}));
 })(App || (App = {}));
-var Tools = App.Tools;
-var log = new Tools.Utils.Logger(LoggerMode.Toastr);
-var p = new Tools.Shapes.Point(4, 7);
-var dist = p.getDist();
-log.write("Distance = " + dist);
+//import Tools = App.Tools;
+//var log = new Tools.Utils.Logger(LoggerMode.Toastr);
+//var p: IPoint = new Tools.Shapes.Point(4, 7);
+//var dist = p.getDist();
+//log.write("Distance = " + dist); 
+//# sourceMappingURL=InternalExtendedModule.js.map

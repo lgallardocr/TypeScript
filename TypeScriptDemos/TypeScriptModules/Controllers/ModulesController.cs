@@ -19,5 +19,10 @@ namespace TypeScriptModules.Controllers
             return PartialView();
         }
 
+        public ActionResult InternalAcrossFiles()
+        {
+            return PartialView();
+        }
+
     }
 }

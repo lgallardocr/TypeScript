@@ -20,7 +20,7 @@
 
 }
 
-var rect: Shape.IRectangle = new Shape.Rectangle(9, 15);
-var area = rect.getArea();
+//var rect: Shape.IRectangle = new Shape.Rectangle(9, 15);
+//var area = rect.getArea();
 
-toastr.info("Area = " + area);
+//toastr.info("Area = " + area);

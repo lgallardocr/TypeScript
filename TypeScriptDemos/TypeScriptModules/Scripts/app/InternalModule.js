@@ -12,6 +12,7 @@ var Shape;
     }());
     Shape.Rectangle = Rectangle;
 })(Shape || (Shape = {}));
-var rect = new Shape.Rectangle(9, 15);
-var area = rect.getArea();
-toastr.info("Area = " + area);
+//var rect: Shape.IRectangle = new Shape.Rectangle(9, 15);
+//var area = rect.getArea();
+//toastr.info("Area = " + area); 
+//# sourceMappingURL=InternalModule.js.map

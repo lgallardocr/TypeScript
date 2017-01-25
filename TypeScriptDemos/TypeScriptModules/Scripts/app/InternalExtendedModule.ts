@@ -64,11 +64,11 @@ namespace App.Tools.Shapes {
 
 }
 
-import Tools = App.Tools;
+//import Tools = App.Tools;
 
-var log = new Tools.Utils.Logger(LoggerMode.Toastr);
+//var log = new Tools.Utils.Logger(LoggerMode.Toastr);
 
-var p: IPoint = new Tools.Shapes.Point(4, 7);
-var dist = p.getDist();
+//var p: IPoint = new Tools.Shapes.Point(4, 7);
+//var dist = p.getDist();
 
-log.write("Distance = " + dist);
+//log.write("Distance = " + dist);

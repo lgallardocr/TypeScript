@@ -10,6 +10,6 @@ class Point implements IPoint {
     getDist() { return Math.sqrt(this.x + this.x * this.y); }
 }
 
-var p: IPoint = new Point(3, 4); 
-var dist = p.getDist();
-toastr.info("Distance = " + dist);
+//var p: IPoint = new Point(3, 4); 
+//var dist = p.getDist();
+//toastr.info("Distance = " + dist);
